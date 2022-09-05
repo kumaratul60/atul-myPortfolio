@@ -1,0 +1,268 @@
+/* import & typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'); 
+
+:root {
+    --primary-color: #007bff;
+    /* --primary-color:#1a53ff; */
+    --dark-grey: #4B5563;
+    --off-white: #F3F4F6;
+
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    background-color: #e6f2ff;
+}
+
+hr {
+    margin: 3rem 0rem;
+}
+
+/* containers */
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* links */
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+.link-primary:hover{
+    background-color: #2468d8;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+.link-secondary:hover{
+    background-color: #d4e3fc;
+}
+
+.link-blogs {
+    color: var(--primary-color);
+    text-decoration:underline;
+}
+
+
+/* lists */
+
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+/* navigations */
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* headers */
+
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.hero .footer-img {
+    max-width: 1px;
+    display: block;
+    margin: auto;
+}
+
+.hero .projects-hero-img {
+    max-width: 200px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    color: var(--dark-grey);
+    padding-top: 1rem;
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+
+/* sections */
+
+.section h1 {
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+
+/* footers */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+
+
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+
+}
+
+
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
+/* projects */
+
+.showcase-list {
+    padding: 2rem;
+}
+
+/* buttons */
+
+button {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    /* border: 0rem solid var(--primary-color); */
+    border: 0rem;
+    /* border-radius: 4px;
+    padding: 0 15px; */
+    cursor: pointer;
+    height: 32px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Social buttons */
+
+.fa {
+    padding: 0.5rem;
+    /* font-size: 1rem; */
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin: 0rem .2rem;
+    border: solid 1px white;
+} 
+
+.fa-github {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.fa:hover {
+    background-color:var(--dark-grey);
+}
+
+
+
+.fa-twitter {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.fa-linkedin {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+
+/* Flexbox */
+
+
+@media(min-width:300px){
+    .flexx{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+
+.flexx-item{
+    flex-basis: 80px;
+}
+
