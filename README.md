@@ -1,4 +1,4 @@
-## Atul's Portfolio
+# Atul's Portfolio
 
 Hey this is portfolio of Atul. I will add more details soon
 
